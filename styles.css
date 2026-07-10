@@ -174,7 +174,6 @@ section { padding: clamp(4rem, 9vw, 7.5rem) clamp(1.5rem, 5vw, 4rem); }
   padding: 1.5rem 1.6rem;
   max-width: 260px;
   box-shadow: var(--shadow-card);
-  transform: translateX(28%);
 }
 .hero-card-star { color: var(--gold); letter-spacing: 0.15em; font-size: 0.9rem; }
 .hero-card p { font-family: var(--serif); font-size: 1.35rem; line-height: 1.25; margin: 0.5rem 0; }
@@ -365,7 +364,6 @@ section { padding: clamp(4rem, 9vw, 7.5rem) clamp(1.5rem, 5vw, 4rem); }
 @media (max-width: 880px) {
   .hero { grid-template-columns: 1fr; }
   .hero-art { min-height: 300px; order: -1; }
-  .hero-card { transform: none; }
   .service-grid, .testimonials { grid-template-columns: 1fr; }
   .book-inner { grid-template-columns: 1fr; }
 }
