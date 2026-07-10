@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glow — Boutique Med Spa</title>
+  <meta name="description" content="Glow is a boutique med spa offering Botox, facials, and laser treatments in a warm, unhurried setting. Book your complimentary consultation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-mark">Glow</span>
+      <span class="brand-sub">med spa</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#services">Services</a>
+      <a href="#testimonials">Reviews</a>
+      <a class="btn btn-ghost" href="#book">Book a consult</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Boutique med spa · By appointment</p>
+        <h1>Your most radiant skin, unhurried.</h1>
+        <p class="lede">
+          Expert aesthetic care in a calm, private studio — where results feel
+          effortless and you never feel like a patient.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#book">Book your consultation</a>
+          <a class="btn btn-text" href="#services">Explore services →</a>
+        </div>
+        <p class="hero-note">Complimentary first consultation · No pressure, ever.</p>
+      </div>
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="hero-orb"></div>
+        <div class="hero-card">
+          <span class="hero-card-star">★★★★★</span>
+          <p>"I finally look as rested as I feel."</p>
+          <span class="hero-card-name">— Mara, member since 2023</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="section-head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2>Three signatures, endlessly refined</h2>
+        <p class="section-sub">Every treatment is tailored in a one-on-one consult — never off a menu.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">✦</div>
+          <h3>Botox &amp; Injectables</h3>
+          <p>Soften fine lines and restore a smooth, well-rested look — subtle enough that people notice you, not the treatment.</p>
+          <a class="service-link" href="#book">Ask about Botox →</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">❀</div>
+          <h3>Signature Facials</h3>
+          <p>Deeply personalized facials that leave skin dewy, calm, and glowing — a reset for your complexion and your week.</p>
+          <a class="service-link" href="#book">Ask about facials →</a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">◈</div>
+          <h3>Laser Treatments</h3>
+          <p>Gentle, advanced laser to even tone, smooth texture, and bring back clarity — with comfort and downtime kept to a minimum.</p>
+          <a class="service-link" href="#book">Ask about laser →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="social" id="testimonials">
+      <div class="social-stats reveal">
+        <div class="stat">
+          <span class="stat-num">4.9<span class="stat-unit">★</span></span>
+          <span class="stat-label">Average across 600+ reviews</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">12k</span>
+          <span class="stat-label">Treatments delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">94%</span>
+          <span class="stat-label">Return for a second visit</span>
+        </div>
+      </div>
+      <div class="testimonials">
+        <figure class="quote reveal">
+          <blockquote>"The most relaxed I've ever felt at anything medical. It feels like a spa, results like a clinic."</blockquote>
+          <figcaption><span class="quote-star">★★★★★</span> Priya S.</figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>"They talked me out of doing too much — that's how I knew I could trust them. My skin has never looked better."</blockquote>
+          <figcaption><span class="quote-star">★★★★★</span> Danielle R.</figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>"Warm, private, and genuinely expert. I drive an hour past three other spas to come here."</blockquote>
+          <figcaption><span class="quote-star">★★★★★</span> Jordan M.</figcaption>
+        </figure>
+      </div>
+      <p class="as-seen reveal">As featured in <em>Allure</em> · <em>Vogue</em> · <em>Goop</em></p>
+    </section>
+
+    <!-- LEAD FORM -->
+    <section class="book" id="book">
+      <div class="book-inner reveal">
+        <div class="book-copy">
+          <p class="eyebrow">Let's begin</p>
+          <h2>Book your complimentary consultation</h2>
+          <p>Tell us a little about you and what you're curious about. We'll reach out within one business day to find a time — no obligation, no pressure.</p>
+          <ul class="book-assurances">
+            <li>Private, one-on-one consult</li>
+            <li>Personalized treatment plan</li>
+            <li>Zero-pressure guarantee</li>
+          </ul>
+        </div>
+
+        <form class="lead-form" id="lead-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required />
+            <p class="error" data-error-for="name"></p>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" required />
+            <p class="error" data-error-for="phone"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" required />
+            <p class="error" data-error-for="email"></p>
+          </div>
+
+          <div class="field">
+            <label for="service">I'm interested in</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="botox">Botox &amp; Injectables</option>
+              <option value="facials">Signature Facials</option>
+              <option value="laser">Laser Treatments</option>
+              <option value="other">Something else / not sure yet</option>
+            </select>
+            <p class="error" data-error-for="service"></p>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Request my consultation</button>
+          <p class="form-fineprint">By submitting, you agree to be contacted about your consultation. We never share your information.</p>
+        </form>
+
+        <div class="form-success" id="form-success" hidden>
+          <div class="success-mark" aria-hidden="true">✦</div>
+          <h3>Thank you — you're on the list.</h3>
+          <p id="success-detail">We'll reach out within one business day to find your perfect time.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="brand">
+      <span class="brand-mark">Glow</span>
+      <span class="brand-sub">med spa</span>
+    </div>
+    <p>By appointment · 123 Rosewood Lane · Open Tue–Sat</p>
+    <p class="fine">© 2026 Glow Med Spa. A fictional studio.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
